@@ -8,6 +8,7 @@ public class Car {
         this("Mazda", 190, false, 10);
     }
 
+
     public Car(String brand, int horsePower, boolean isAwd, float acceleratiom) {
         this.brand = brand;
         this.horsePower = horsePower;
