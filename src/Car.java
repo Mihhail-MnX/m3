@@ -1,4 +1,4 @@
-public class Car {
+public class Car  extends transport implements Rideable{
     String brand;
     int horsePower;
     boolean isAwd;
@@ -13,6 +13,7 @@ public class Car {
         this.horsePower = horsePower;
         this.isAwd = isAwd;
         this.acceleratiom = acceleratiom;
+        type = "Car";
     }
     void start() {
         System.out.println(brand + " has been started");
@@ -20,4 +21,10 @@ public class Car {
     float countSpeed(float time) {
         return (100/acceleratiom) * time;
     }
+    public void ride() {
+        System.out.println("Riding car");
+
+    }
+
+
 }
